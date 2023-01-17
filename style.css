@@ -1,0 +1,432 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    list-style: none !important;
+    text-decoration: none !important;
+}
+
+/* Navbar */
+
+.navigation{
+    display: flex !important;
+    position: fixed;
+    justify-content: space-around !important;
+    height: 5rem !important;
+    top: 0;
+    margin: 0px auto 0px auto;
+    background-color: white;
+    z-index: 99;
+}
+
+
+.navlinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    margin: 0px 170px 0px 170px;
+}
+
+.navlink1{
+    background-color: #ffe404;
+    border-radius: 80px;
+    height: 40px;
+    width: 98px;
+    padding: 8px 0px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.navhov{
+    border-radius: 80px;
+    height: 40px;
+    width: 98px;
+    padding: 8px 0px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.navhov:active{
+    background-color: yellow;
+}
+
+.navhov:hover{
+    background-color: #fffcc4;
+    transition: ease-in-out 0.2s;
+}
+
+.authlinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.authlinks a{
+    border-radius: 80px;
+    height: 40px;
+    width: 98px;
+    padding: 9px 0px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.auth1{
+    color: #0b59a5 !important;
+    border: 2px solid #0b59a5;
+    background:none
+}
+
+.auth2{
+    width: 80px;
+    color:white !important;
+    background-color: #0b59a5;
+}
+
+/* Main Section */
+.mainsec{
+    background-color: #f4faff;
+    padding-bottom: 100px;
+}
+
+.dot {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.main1{
+    margin-top: 150px;
+    padding: 0px;
+}
+
+.main2{
+    margin-top: 110px;
+}
+
+.main1 h3{
+    font-weight: 600;
+    color: red;
+    font-size: 18px;
+    letter-spacing: 1px;
+    justify-content: center;
+    margin-left: 12px;
+}
+
+.blink{
+    z-index: 0;
+    animation: blinker 1s linear infinite;
+    margin: 10px 0px;
+}
+  
+@keyframes blinker{
+    50% {opacity: 0;}
+}
+
+.main1 h2{
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.main1 h1{
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 60px;
+}
+
+.main1 h6{
+    font-weight: 400;
+    margin: 30px 0px;
+}
+
+.enroll{
+    background-color: #0b59a5;
+    border-radius: 80px;
+    height: 48px;
+    width: 200px;
+    padding: 15px 0px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 13px;
+    margin: 30px 0px;
+}
+
+/* WeOffer Section */
+
+.wesection{
+    margin: 9% 0px;
+}
+
+.sectiontitle{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.features{
+    width: 95%;
+}
+
+.feature{
+    display: flex;
+    margin-top: 20px;
+}
+
+.detail{
+    padding: 15px;
+}
+
+.detail h3{
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.detail h3:hover{
+    color: #0b59a5;
+}
+
+.detail p{
+    font-weight: 300;
+    word-spacing: 1px;
+    font-size: 17.3px;
+}
+
+/* Ready to Explore */
+
+.readysec{
+    background-color: #f4faff;
+}
+
+.readysec p{
+    padding-top: 10px;
+}
+
+.modalimg{
+    position: relative;
+    width: 95%;
+}
+
+.playbtn{
+    color: white;
+    scale: 3;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-carousel{
+    height: 300px;
+}
+
+.modal-yt{
+    scale: 1.7;
+}
+
+/* Start a new learning journey */
+
+.learningsection{
+    height: 100%;
+}
+
+.switchtxt{
+    font-size: 24px;
+    margin: auto 15px;
+}
+
+/* Switch Slider */
+.switch {
+    margin: 4px 0px 0px 0px;
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 22px;
+}
+  
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0b59a5;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 19px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #0b59a5;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #0b59a5;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.plan-group{
+    height: 700px;
+    background: rgb(11,89,165);
+    background: linear-gradient(180deg, rgba(11,89,165,1) 0%, rgba(11,89,165,1) 68%, rgba(255,255,255,1) 68%);
+}
+
+.plans{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.plan-card{
+    margin: 7% 2%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2%;
+    width: 400px;
+    height: 540px;
+    box-shadow: rgba(18, 149, 224, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.plan-card-content{
+    margin: 10%;
+}
+
+.card-ul{
+    list-style: none;
+    padding: 0px;
+    margin:5% 0%;
+}
+
+.card-ul li{
+    padding: 0px 5px;
+}
+
+.tick{
+    color: rgb(73, 170, 73);
+    scale: 0.8;
+}
+
+.card-footer{
+    padding-top: 18%;
+    text-align: center;
+}
+
+/* Footer */
+.footer ul{
+    padding: 0% 8%;
+    font-size: 15px;
+}
+
+.footer-head{
+    margin: 10% 8%;
+    font-weight: 600;
+}
+
+.footer-head:hover{
+    color: #0b59a5;
+}
+
+.footer span{
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    color: rgb(63, 62, 62);
+}
+
+/* Media Queries */
+
+/* Small Devices Only */
+@media only screen and (min-width: 320px) and (max-width: 479px)
+{
+    .main1{
+        padding: 0% 10%;
+    }
+
+    .enroll{
+        margin: 15% 20%;
+    }
+
+    .feature{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .readysec p{
+        text-align: center;
+    }
+
+    .modal-carousel{
+        height: 220px;
+    }
+    
+    .plans{
+        flex-direction: column;
+    }
+
+    .plan-group{
+        height: 1300px;
+        padding: 10% 2%;
+    }
+
+    .plan-card{
+        scale: 0.8;
+        padding: 0%;
+        margin: 50px 0px;
+    }
+
+}
+
+
+/* Medium Devices */
+
+@media only screen and (min-width: 768px) and (max-width: 979px)
+{
+    .readysec p{
+        text-align: center;
+        font-size: 14.5px;
+    }
+
+    .modal-carousel{
+        height: 380px;
+    }
+}
