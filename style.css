@@ -8,7 +8,7 @@
 
 /* Navbar */
 
-.navigation{
+/* .navigation{
     display: flex !important;
     position: fixed;
     justify-content: space-around !important;
@@ -88,7 +88,59 @@
     width: 80px;
     color:white !important;
     background-color: #0b59a5;
+} */
+
+.navlink1{
+    background-color: #ffe404;
+    border-radius: 80px;
+    height: 40px;
+    width: 98px;
+    padding: 8px 0px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
 }
+
+.navlink1:hover{
+    color: black;
+}
+
+.lef{
+    position: relative;
+    left:200px;
+}
+
+.authlinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.authlinks a{
+    border-radius: 80px;
+    height: 40px;
+    width: 98px;
+    padding: 9px 0px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.auth1{
+    color: #0b59a5 !important;
+    border: 2px solid #0b59a5;
+    background:none
+}
+
+.auth2{
+    width: 80px;
+    color:white !important;
+    background-color: #0b59a5;
+}
+
 
 /* Main Section */
 .mainsec{
@@ -421,6 +473,11 @@ input:checked + .slider:before {
 
 @media only screen and (min-width: 768px) and (max-width: 979px)
 {
+    .lef{
+        position: relative;
+        left: 0px;
+    }
+
     .readysec p{
         text-align: center;
         font-size: 14.5px;
